@@ -2,7 +2,7 @@ body {
     font-size: 20px;
     background-color: #1A1A2E;
     color: #00FFFF;
-    font-family: 'Souce Code Pro', monospace;
+    font-family: 'Source Code Pro', monospace;
     margin: 0;
     scroll-behavior: smooth;
 }
@@ -146,6 +146,7 @@ header p {
 }
 
 #profile-link {
+    margin-top: 50px;
     text-align: center;
     font-size: 20px;
 }
@@ -169,9 +170,23 @@ header p {
     transition: 0 ease-in-out;
 }
 
-@media only screen and(max-width: 600px) {
-    div .logo-container, img, .logo {
-        display: none !important;
+@media only screen and (max-width: 600px) {
+    .logo {
+        visibility: hidden;
+    }
+    
+    #about-section {
+    width: 80vw;
+    margin-left: 10vw;
+    }
+    
+    #projects h1, #projects > p {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    margin-bottom: -10px;
+    
     }
 
     .project-tile {
@@ -179,6 +194,24 @@ header p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    }
+
+    .project-tile img {
+    width: 70vw;
+    height: 35vh;
+    object-fit: fill;
+    }
+    
+    .img-container p {
+    width: 70vw;
+    margin: -5px 0 0 0;
+    }
+    
+    #profile-link h1, #profile-link > p {
+    width: 90vw;
+    margin-left: 5vw;
+    }
+    
+    
 
 }
